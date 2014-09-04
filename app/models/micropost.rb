@@ -1,4 +1,4 @@
 class Micropost < ActiveRecord::Base
-	belongs_to :dduser
+	belongs_to :user
 	validates :content, :length => { :maximum => 140 }
 end
